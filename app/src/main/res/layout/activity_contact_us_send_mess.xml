@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs.ContactUsSendMessActivity"
+    android:background="@color/white">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/app_bar"
+        android:background="@color/blue">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/item_name_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/send_message"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:id="@+id/signUp_back_img"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/nav_back"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/mess_email_input">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/signup_email"
+            android:drawablePadding="20dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/mess_email_input"
+        app:layout_constraintEnd_toEndOf="@id/mess_email_input"
+        app:layout_constraintTop_toBottomOf="@id/mess_email_input"
+        android:layout_marginTop="20dp"
+        android:id="@+id/mess_phone_input">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="number"
+            android:drawableStart="@drawable/signup_phone"
+            android:drawablePadding="20dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/mess_email_input"
+        app:layout_constraintEnd_toEndOf="@id/mess_email_input"
+        app:layout_constraintTop_toBottomOf="@id/mess_phone_input"
+        android:layout_marginTop="20dp"
+        android:id="@+id/mess_subject_input">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject"
+            android:inputType="text"
+            android:drawableStart="@drawable/message_title"
+            android:drawablePadding="20dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/mess_email_input"
+        app:layout_constraintEnd_toEndOf="@id/mess_email_input"
+       app:layout_constraintBottom_toTopOf="@+id/send_btn"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/mess_message_input">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message"
+            android:inputType="text"
+            android:drawableStart="@drawable/message_body"
+            android:drawablePadding="20dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:textAllCaps="false"
+        android:text="@string/send"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/mess_subject_input"
+        app:layout_constraintEnd_toEndOf="@id/mess_subject_input"
+       app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/send_btn"
+       android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

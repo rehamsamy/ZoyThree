@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs.ContactUsActivity"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/app_bar"
+        android:background="@color/blue">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/item_name_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/contact_us"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:id="@+id/signUp_back_img"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/nav_back"
+                android:scaleType="fitXY"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/contact_whatsapp"
+        android:text="WhatsApp:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+      app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintStart_toStartOf="@id/app_bar"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/whatsapp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/whatsapp"
+        app:layout_constraintTop_toBottomOf="@id/whatsapp"
+        android:layout_marginStart="40dp"
+        android:text="@string/user_phone"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/signup_phone"
+        android:text="@string/phone"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/whatsapp"
+        app:layout_constraintTop_toBottomOf="@id/whatsapp_value"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/phone_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/whatsapp_value"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        android:text="@string/user_phone"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/map_address"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/whatsapp"
+        app:layout_constraintTop_toBottomOf="@id/phone_value"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/address_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/whatsapp_value"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        android:text="@string/location_example"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/contact_web"
+        android:text="@string/website"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/whatsapp"
+        app:layout_constraintTop_toBottomOf="@id/address_value"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/website_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/whatsapp_value"
+        app:layout_constraintTop_toBottomOf="@id/website"
+        android:text="@string/company_link"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/signup_email"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/whatsapp"
+        app:layout_constraintTop_toBottomOf="@id/website_value"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/email_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/whatsapp_value"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:text="@string/email_value"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/send_message_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_value"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/send_message"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@color/blue"
+
+
+        />
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

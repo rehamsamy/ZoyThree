@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoneOrderActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/sucess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/sucess"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/sucess_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/success_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sucess"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/thanks_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_for_shopping"
+        app:layout_constraintTop_toBottomOf="@id/sucess_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/track_order_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/thanks_shopping"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/track_order"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"/>
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/back_shop_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/track_order_btn"
+        app:layout_constraintEnd_toEndOf="@id/track_order_btn"
+        android:background="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/track_order_btn"
+        android:text="@string/back_shop"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
